@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: #CDC;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #422;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12.5px;
+    margin: auto;
+    margin-top: 30px;
+    width: 900px;
+    height: 600px;
+}
+
+.container #blend {
+    grid-row: 1 / 4;
+}
+
+.canvas {
+    margin: auto;
+    width: 400px;
+    height: 150px;
+    background-color: #000;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px #888;
+}
+
+.canvas #boxRed {
+    background-color: #000;
+}
+
+#boxMix {
+    height: 560px;
+}
+
+.box-color {
+    display: grid;
+}
+
+.box-color .canvas {
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.box-color span {
+    background-color: rgba(128, 128, 128, 0.5);
+    display: flex;
+    margin: 0 auto;
+    width: 380px;
+    height: 30px;
+    padding: 10px;
+    justify-content: space-around;
+    color: #FFF;
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: 0px 0px 25px 25px;
+}
+
+
+.box-color span p {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.box-color span input[type=text] {
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.box-color span input[type=range] {
+    width: 150px;
+}

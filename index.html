@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>tabela RGB</title>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <div class="box-color">
+                <div class="canvas" id="boxRed"></div>
+                <span>
+                    <p>Vermelho</p>
+                    <input type="range" id="redRange" value="0" min="0" max="255">
+                    <input type="text" id="redText" value="0" disabled>
+                </span>
+            </div>
+            <div class="box-color">
+                <div class="canvas" id="boxGreen"></div>
+                <span>
+                    <p>Verde</p>
+                    <input type="range" id="greenRange" value="0" min="0" max="255">
+                    <input type="text" id="greenText" value="0" disabled>
+                </span>
+            </div>
+            <div class="box-color">
+                <div class="canvas" id="boxBlue"></div>
+                <span>
+                    <p>Azul</p>
+                    <input type="range"  id="blueRange" value="0" min="0" max="255">
+                    <input type="text" id="blueText" value="0" disabled>
+                </span>
+            </div>
+            <div class="box-color" id="blend">
+                <div class="canvas" id="boxMix"></div>
+                <span>
+                    <p>Vermelho</p>
+                    <input type="text" id="redMixed" value="0" disabled>
+                    <p>Verde</p></p>
+                    <input type="text" id="greenMixed" value="0" disabled>
+                    <p>Azul</p>
+                    <input type="text" id="blueMixed" value="0" disabled>
+                    
+                </span>
+            </div>
+        </div>
+    </form>
+    
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
